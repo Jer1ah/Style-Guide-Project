@@ -1,0 +1,17 @@
+* {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    line-height: $lh-main;
+}
+
+body {
+    @include desktop {
+    max-width: 90%;
+    margin: auto
+  }
+}
+
+
+
+

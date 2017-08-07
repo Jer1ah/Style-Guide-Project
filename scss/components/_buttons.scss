@@ -1,0 +1,118 @@
+#buttons {
+    display: none;
+    @include desktop {
+        display: block;
+        max-width: 88%;
+        margin: auto;
+        color: $color-nav-a;
+        font-weight: normal;
+        font-size: $font-size-desktop;
+        text-align: left;
+    }
+}
+
+#grid {
+   display: none; 
+}
+
+.grid__row--12 {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 5em auto;
+    @include desktop {
+        margin-top: 1em;
+    }
+    button {
+        width: 100%;
+        padding: 1em 0;
+        border-radius: 5px;
+        margin-bottom: .5em;
+        border: none;
+        color: $color-white;
+        font-size: $font-size-button;
+    }
+}
+
+.theme__colors {
+    background-color: pink;
+    margin-top: .7em;
+    border-radius: 5px;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    width: 100%;
+    div {
+        padding: 1em 0;
+        font-size: $font-size-button;
+        color: $color-white;
+    }
+}
+
+// Colors for Buttons
+
+.btn {
+    &--default {
+        background-color: $color-spray;
+    }
+    &--success {
+       background-color: $color-gumleaf;
+    }
+    &--error {
+        background-color: $color-error;
+    }
+    &--warning {
+        background-color: $color-warning;
+    }
+    &--info {
+        background-color: $color-purple;
+    }
+}
+
+.twelve {
+    background-color: $color-gumleaf;
+    justify-content: space-around;
+}
+
+.six {
+    background-color: $color-idigo;
+}
+
+.four {
+    background-color: $color-tacao;
+}
+
+.three {
+    background-color: $color-purple;
+}
+
+.five {
+    background-color: $color-neon;
+}
+
+.seven {
+    background-color: $color-brick;
+}
+
+.eight {
+    background-color: $color-gumleaf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+.nav a {
+    color: $color-nav-a;
+}
+
+.nav {
+    margin-top: 2.2em;
+}
+
+.nav li {
+    padding: .8em;
+    margin-top: .2em;
+    width: 40%;
+    margin: auto;
+    border-radius: 5px;
+   &:hover {
+    background-color: $color-gumleaf;
+   a {
+      color: $color-nav-a-hover;
+    }
+  }
+}
+
+.main-nav {
+    @include desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+   }
+}
+
+.nav {
+    @include desktop {
+    display: flex;
+  }
+}
+
+
+
+

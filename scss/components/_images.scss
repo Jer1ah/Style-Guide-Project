@@ -1,0 +1,40 @@
+#images {
+    font-weight: normal;
+    @extend %align-left;
+    margin-left: 1em;
+    color: $color-nav-a;
+    @include desktop {
+    max-width: 90%;
+    margin-bottom: 0;
+    margin: auto;
+    font-size: $font-size-desktop;
+  }
+}
+
+.img {
+    &--frame {
+        max-width: 80%;
+    }
+    &--avatar {
+        width: 40%;
+        margin-top: 1em;
+    }
+    &--logo {
+        @include desktop {
+            margin-top: 1em;
+        }
+    }
+}
+
+.imgs {
+    @include desktop {
+    display: flex;
+    margin-bottom: 5em;
+  }
+}
+
+
+.grid__col--6 {
+    margin: auto;
+}
+    
