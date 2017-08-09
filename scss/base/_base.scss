@@ -6,6 +6,7 @@
 }
 
 body {
+    font-family: #{$main-font};
     @include desktop {
     max-width: 90%;
     margin: auto

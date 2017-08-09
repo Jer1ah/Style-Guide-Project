@@ -11,7 +11,10 @@
     }
 }
 
-.grid__col--12 p {
+.grid {
+@include e(col) {
+    @include m(12) {
+      p {
     margin-top: 3em;
     margin-bottom: 2em;
     color: $color-nav-a;
@@ -24,6 +27,9 @@
         margin-left: 2.2em;
         font-size: $font-size-desktop;
     }
+   }
+  }
+ }
 }
 
 .blockquote {
@@ -50,6 +56,7 @@
     @extend %align-left;
     color: $color-gumleaf;
     margin-left: .5em;
+    @extend %h1-font-size;
     @include desktop {
         margin-left: 0px;
         margin-top: -10px;
@@ -57,7 +64,7 @@
 }
 
 .link {
-    color: $color-spray;
+   @extend %link-color
 }
 
 .main-col {
@@ -82,17 +89,6 @@
     margin-left: 5em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

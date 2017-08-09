@@ -7,8 +7,7 @@
 }
 
 .nav li {
-    padding: .8em;
-    margin-top: .2em;
+    @extend %nav-spacing;
     width: 40%;
     margin: auto;
     border-radius: 5px;

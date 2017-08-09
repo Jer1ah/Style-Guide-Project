@@ -1,16 +1,31 @@
 .blockquote, #type, .headline--primary, #images {
   text-align: left; }
 
+.link {
+  color: #83DEF1; }
+
+.nav li {
+  padding: .8em;
+  margin-top: .2em; }
+
+.img--avatar {
+  margin-top: 1em; }
+
+.headline--primary {
+  font-size: 44px; }
+
 * {
   text-align: center;
   text-decoration: none;
   list-style: none;
   line-height: 1.4em; }
 
-@media (min-width: 1400px) {
-  body {
-    max-width: 90%;
-    margin: auto; } }
+body {
+  font-family: 'Lora', serif; }
+  @media (min-width: 1400px) {
+    body {
+      max-width: 90%;
+      margin: auto; } }
 
 .card {
   max-width: 90%;
@@ -59,9 +74,6 @@
       margin-left: 0px;
       margin-top: -10px; } }
 
-.link {
-  color: #83DEF1; }
-
 @media (min-width: 1400px) {
   .main-col {
     display: flex;
@@ -86,8 +98,6 @@
   margin-top: 2.2em; }
 
 .nav li {
-  padding: .8em;
-  margin-top: .2em;
   width: 40%;
   margin: auto;
   border-radius: 5px; }
@@ -121,8 +131,7 @@
 .img--frame {
   max-width: 80%; }
 .img--avatar {
-  width: 40%;
-  margin-top: 1em; }
+  width: 40%; }
 @media (min-width: 1400px) {
   .img--logo {
     margin-top: 1em; } }
@@ -264,7 +273,7 @@
   background-color: #B1D3BE; }
 
 @media (min-width: 1400px) {
-  .grid__row1 {
+  .grid__row {
     display: flex;
     flex-direction: row; } }
 
@@ -283,7 +292,7 @@
 .theme__colors {
   margin: .6em; }
 
-.centered2 {
+.centered {
   justify-content: space-around;
   margin: 0 10em; }
 

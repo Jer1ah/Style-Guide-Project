@@ -17,11 +17,11 @@
     }
     &--avatar {
         width: 40%;
-        margin-top: 1em;
+        @extend %img-margin-t;
     }
     &--logo {
         @include desktop {
-            margin-top: 1em;
+          margin-top: 1em;
         }
     }
 }

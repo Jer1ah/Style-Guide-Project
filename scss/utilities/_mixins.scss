@@ -5,3 +5,20 @@
         @content;
     }
 }
+
+@mixin flex($num) {
+    flex: $num;
+    @content;
+}
+
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content
+    }
+}
+
+@mixin e($element) {
+    &__#{$element} {
+        @content
+    }
+}

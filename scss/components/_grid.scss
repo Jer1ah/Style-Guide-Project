@@ -1,4 +1,4 @@
-.grid__row1 {
+.grid__row {
     @include desktop {
     display: flex;
     flex-direction: row;
@@ -7,19 +7,20 @@
 
 .grid__col--12, .grid__col--6, .grid__col--4, .grid__col--3, .grid__col--5 {
     @include desktop {
-    flex: 1;
+        @include flex(1) {}
   }
 }
 
 .grid__col--7 {
     @include desktop {
-        flex: 2;
+        @include flex(2) {
+        }
     }
 }
 
 .grid__col--8 {
     @include desktop {
-        flex: 3;
+        @include flex(3) {}
     }
 }
 
@@ -27,7 +28,7 @@
     margin: .6em;
 }
 
-.centered2 {
+.centered {
     justify-content: space-around;
     margin: 0 10em;
 }
